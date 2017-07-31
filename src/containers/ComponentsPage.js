@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actions from '../actions/topicActions';
+import * as actions from '../actions/componentActions';
 
 import Heading from '../components/Heading';
 import Subheading from '../components/Subheading';

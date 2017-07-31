@@ -1,4 +1,4 @@
-# Article Filtering Feed
+# React Demo Page Mock
 
 ## Get Started
 

@@ -1,10 +1,10 @@
-import * as types from '../constants/articleActionTypes';
+import * as types from '../constants/componentActionTypes';
 import initialState from './initialState';
 
 
 export default function componentsReducer(state = initialState.components, action) {
   switch (action.type) {
-    case types.REQUEST_ARTICLES: {
+    case types.REQUEST_COMPONENTS: {
       return {
         ...state,
         error: false,
@@ -12,17 +12,17 @@ export default function componentsReducer(state = initialState.components, actio
       };
     }
 
-    case types.LOAD_ARTICLES: {
-      const allArticles = action.payload.allArticles.data;
+    case types.LOAD_COMPONENTS: {
+      const allComponents = action.payload.allComponents.data;
       return {
         ...state,
         isFetching: false,
         error: false,
-        allArticles,
+        allComponents,
       };
     }
 
-    case types.ERROR_LOADING_ARTICLES: {
+    case types.ERROR_LOADING_COMPONENTS: {
       return {
         ...state,
         isFetching: false,
