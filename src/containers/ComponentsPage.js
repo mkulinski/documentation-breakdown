@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions/topicActions';
 
+import Heading from '../components/Heading';
+import Subheading from '../components/Subheading';
+
 
 import '../styles/components-page.scss';
 
@@ -14,8 +17,8 @@ class ComponentsPage extends Component {
     console.log(currentState);
     return (
       <div className="component-container">
-        <h1>pageHeading</h1>
-        <div>Subheading</div>
+        <Heading value={currentState.heading} />
+        <Subheading value={currentState.subheading} />
         <div>Example</div>
         <div>Best Practices</div>
         <div>GuideLines</div>
@@ -27,6 +30,7 @@ class ComponentsPage extends Component {
 ComponentsPage.propTypes = {
   state: PropTypes.object.isRequired,
   actions: PropTypes.object.isRequired,
+  routeParams: PropTypes.object.isRequired,
 };
 
 function mapStateToProps(state) {

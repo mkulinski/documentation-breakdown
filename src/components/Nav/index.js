@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, IndexLink } from 'react-router';
 
-import '../styles/nav.scss';
+import '../../styles/nav.scss';
 
 
 const Nav = () => {
