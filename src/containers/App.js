@@ -3,7 +3,7 @@ import Nav from '../components/Nav';
 
 
 const App = (props) => (
-  <div>
+  <div className="app-container">
     <Nav />
     {props.children}
   </div>

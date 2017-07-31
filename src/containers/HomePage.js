@@ -10,7 +10,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div className="component-container">
+      <div className="component-container contents-container">
         <h1>Engage-UI</h1>
         <p>This is the home or root page for the engage-ui docs</p>
         <p>Just some text about how amazing the engage-ui library truely is</p>

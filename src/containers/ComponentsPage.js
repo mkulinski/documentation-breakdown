@@ -15,12 +15,11 @@ class ComponentsPage extends Component {
   render() {
     const currentComponent = this.props.routeParams.component;
     const currentState = this.props.state[currentComponent];
-    // console.log('current state example', currentState.example);
     return (
-      <div className="component-container">
+      <div className="component-container contents-container">
         <Heading value={currentState.heading} />
         <Subheading value={currentState.subheading} />
-        <Example tableValues={currentState.example}/>
+        <Example tableValues={currentState.example} />
         <div style={{ marginTop: 100 }}>{'<Best Practices Component />'}</div>
         <div>{'<GuideLines Component />'}</div>
       </div>

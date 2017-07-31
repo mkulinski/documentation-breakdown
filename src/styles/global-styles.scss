@@ -46,9 +46,14 @@ button:focus { outline:0; }
 
 a { text-decoration: none; }
 
+.app-container {
+  display: flex;
+}
+
 .component-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  flex-grow: 1;
 }

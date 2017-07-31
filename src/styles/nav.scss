@@ -2,22 +2,24 @@
 
 
 .nav {
+  width: 25%;
   ul {
     list-style: none;
     background-color: $white;
-    font-size: 12px;
+    font-size: 24px;
+    height: 100vh;
     text-align: center;
-    padding: 0;
-    margin: 0;
   }
 
   li {
+    margin-top: 10px;
     font-family: 'Oswald', sans-serif;
-    line-height: 20px;
-    height: 20px;
+    line-height: 24px;
+    height: 40px;
   }
 
   a {
+    margin-top: 10px;
     text-decoration: none;
     color: $red;
     display: block;
@@ -27,29 +29,6 @@
   a:hover {
     background-color: $red;
     color: $white;
-  }
-}
-
-@media screen and (min-width: 735px) {
-  .nav {
-    border-bottom: 1px solid $gray;
-
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      flex-flow: row nowrap;
-
-      li:first-child {
-        margin-right:auto;
-      }
-    }
-
-    li {
-      width: 120px;
-      border-bottom: none;
-      height: 50px;
-      line-height: 50px;
-      font-size: 1.4em;
-    }
+    height: 40px;
   }
 }
