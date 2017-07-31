@@ -5,6 +5,7 @@ import * as actions from '../actions/topicActions';
 
 import Heading from '../components/Heading';
 import Subheading from '../components/Subheading';
+import Example from '../components/Example';
 
 
 import '../styles/components-page.scss';
@@ -14,14 +15,14 @@ class ComponentsPage extends Component {
   render() {
     const currentComponent = this.props.routeParams.component;
     const currentState = this.props.state[currentComponent];
-    console.log(currentState);
+    // console.log('current state example', currentState.example);
     return (
       <div className="component-container">
         <Heading value={currentState.heading} />
         <Subheading value={currentState.subheading} />
-        <div>Example</div>
-        <div>Best Practices</div>
-        <div>GuideLines</div>
+        <Example tableValues={currentState.example}/>
+        <div style={{ marginTop: 100 }}>{'<Best Practices Component />'}</div>
+        <div>{'<GuideLines Component />'}</div>
       </div>
     );
   }
