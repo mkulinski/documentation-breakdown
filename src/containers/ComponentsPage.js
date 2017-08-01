@@ -16,7 +16,7 @@ class ComponentsPage extends Component {
     const currentComponent = this.props.routeParams.component;
     const currentState = this.props.state[currentComponent];
     return (
-      <div className="component-container contents-container">
+      <div className="component-container">
         <Heading value={currentState.heading} />
         <Subheading value={currentState.subheading} />
         <Example tableValues={currentState.example} />
