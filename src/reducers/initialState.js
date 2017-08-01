@@ -1,9 +1,9 @@
-import linkState from './componentState/linkState';
-import listState from './componentState/listState';
+import link from './componentState/linkState';
+import list from './componentState/listState';
 
 export default {
   components: {
-    link: linkState,
-    list: listState,
+    link,
+    list,
   },
 };

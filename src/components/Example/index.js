@@ -37,7 +37,7 @@ class Example extends Component {
         >
           {row[key]}
         </td>);
-    })
+    });
   }
 
   render() {
