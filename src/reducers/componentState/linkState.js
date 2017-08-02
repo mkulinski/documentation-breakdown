@@ -6,4 +6,12 @@ export default {
     { name: 'children', type: 'string', desc: 'the url link to' },
     { name: 'children', type: 'string', desc: 'the url link to' },
   ],
+  code: `
+    const linkFunc = propy => {
+      console.log('propy', propy);
+      return propy + 'this is really a propy';
+    };
+    const prop = 'This is a prop';
+    linkFunc(prop);
+  `,
 };

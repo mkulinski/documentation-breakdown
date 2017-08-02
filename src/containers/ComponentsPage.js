@@ -6,6 +6,7 @@ import * as actions from '../actions/componentActions';
 import Heading from '../components/Heading';
 import Subheading from '../components/Subheading';
 import Example from '../components/Example';
+import CodeExample from '../components/CodeExample';
 
 
 import '../styles/components-page.scss';
@@ -20,6 +21,7 @@ class ComponentsPage extends Component {
         <Heading value={currentState.heading} />
         <Subheading value={currentState.subheading} />
         <Example tableValues={currentState.example} />
+        <CodeExample codeString={currentState.code} />
         <div style={{ marginTop: 100 }}>{'<Best Practices Component />'}</div>
         <div>{'<GuideLines Component />'}</div>
       </div>
