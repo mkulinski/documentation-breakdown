@@ -10,8 +10,6 @@ import CodeExample from '../components/CodeExample';
 
 import '../styles/components-page.scss';
 
-const ChoiceListExampleSource = require('!raw-loader!../example/ChoiceListExample');
-
 class ComponentsPage extends Component {
   render() {
     const currentComponent = this.props.routeParams.component;
