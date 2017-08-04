@@ -1,9 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 
-import '../../styles/example.scss';
+import '../../styles/table.scss';
 
 
-class Example extends Component {
+class Table extends Component {
 
   createHeadings = () => {
     // creates an array of th components based on the keys in the first object
@@ -56,8 +56,8 @@ class Example extends Component {
   }
 }
 
-Example.propTypes = {
+Table.propTypes = {
   tableValues: PropTypes.array.isRequired,
 };
 
-export default Example;
+export default Table;

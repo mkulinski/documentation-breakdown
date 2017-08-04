@@ -5,12 +5,12 @@ import * as actions from '../actions/componentActions';
 
 import Heading from '../components/Heading';
 import Subheading from '../components/Subheading';
-import Example from '../components/Example';
+import Table from '../components/Table';
 import CodeExample from '../components/CodeExample';
-
 
 import '../styles/components-page.scss';
 
+const ChoiceListExampleSource = require('!raw-loader!../example/ChoiceListExample');
 
 class ComponentsPage extends Component {
   render() {
@@ -20,7 +20,7 @@ class ComponentsPage extends Component {
       <div className="component-container">
         <Heading value={currentState.heading} />
         <Subheading value={currentState.subheading} />
-        <Example tableValues={currentState.example} />
+        <Table tableValues={currentState.example} />
         <CodeExample codeString={currentState.code} />
         <div style={{ marginTop: 100 }}>{'<Best Practices Component />'}</div>
         <div>{'<GuideLines Component />'}</div>
