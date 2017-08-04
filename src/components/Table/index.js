@@ -57,7 +57,7 @@ class Table extends Component {
 }
 
 Table.propTypes = {
-  tableValues: PropTypes.array.isRequired,
+  tableValues: PropTypes.array,
 };
 
 export default Table;

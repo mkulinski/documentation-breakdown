@@ -7,7 +7,7 @@ const CodeExample = ({ codeString }) =>
   <SyntaxHighlighter language="javascript" style={hopscotch}>{codeString}</SyntaxHighlighter>;
 
 CodeExample.propTypes = {
-  codeString: PropTypes.string.isRequired,
+  codeString: PropTypes.string,
 };
 
 export default CodeExample;

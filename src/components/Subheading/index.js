@@ -13,7 +13,7 @@ const Subheading = ({ value, className }) => {
 };
 
 Subheading.propTypes = {
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   className: PropTypes.string,
 };
 
