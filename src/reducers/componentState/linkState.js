@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import code from '!raw-loader!../../examples/HeadingExample';
+import HeadingExample from '../../examples/HeadingExample';
 
 export default {
   // heading: 'Link Component',
@@ -10,4 +11,5 @@ export default {
     { name: 'children', type: 'string', desc: 'the url link to' },
   ],
   code,
+  sampleComponent: HeadingExample,
 };

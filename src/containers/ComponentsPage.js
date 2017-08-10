@@ -20,6 +20,7 @@ class ComponentsPage extends Component {
         <Subheading value={currentState.subheading} />
         <Table tableValues={currentState.example} />
         <CodeExample codeString={currentState.code} />
+        <currentState.sampleComponent />
         <div style={{ marginTop: 100 }}>{'<Best Practices Component />'}</div>
         <div>{'<GuideLines Component />'}</div>
       </div>

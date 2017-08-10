@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import code from '!raw-loader!../../examples/HeadingExample';
+import HeadingExample from '../../examples/HeadingExample';
 
 export default {
   heading: 'List Component',
@@ -9,4 +10,5 @@ export default {
     { name: 'children', type: 'string or React Node', desc: 'the content to display inside list' },
   ],
   code,
+  sampleComponent: HeadingExample,
 };
