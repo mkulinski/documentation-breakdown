@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Heading from '../components/Heading';
-// import { Button } from 'engage-ui/src/components/Button';
+import SplitPane from '../components/SplitPane';
 
 import '../styles/home-page.scss';
 
@@ -10,8 +10,19 @@ const HomePage = () => {
   return (
     <div className="component-container">
       <Heading value="Engage-UI" />
-      <p>This is the home or root page for the engage-ui docs</p>
-      <p>Just some text about how amazing the engage-ui library truely is</p>
+      <div className="parent">
+        <div className="wrapper">
+          <SplitPane
+            split="vertical"
+            minSize={50}
+            maxSize={300}
+            defaultSize={100}
+          >
+            <div />
+            <div />
+          </SplitPane>
+        </div>
+      </div>
     </div>
   );
 };
